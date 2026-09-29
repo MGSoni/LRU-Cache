@@ -1,14 +1,19 @@
 package com.lld.tictactoe;
 
+import java.util.HashMap;
+import java.util.Map;
+
 class Node {
     Node next;
     Node prev;
+    int key;
     int value;
 
-    Node( int value){
+    Node( int value, int key){
         this.next = null;
         this.prev = null;
         this.value = value;
+        this.key = key;
     }
 
 
@@ -52,5 +57,18 @@ public class DLL {
         node.prev = null;
         node.next = null;
     }
+
+}
+
+class LRUCache{
+    Map<Integer,Node> map = new HashMap<>();
+    DLL dll;
+    int capacity;
+
+    LRUCache(int capacity){
+        this.dll = new DLL();
+        this.capacity = capacity;
+    }
+
 
 }
