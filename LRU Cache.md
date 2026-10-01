@@ -1,5 +1,6 @@
 # LRU Cache — Study Notes
 
+
 **Pattern:** HashMap + Doubly Linked List for O(1) get/put with recency eviction
 **Asked at:** Amazon SDE2 (Round 2), extremely common at Meta, Google, Microsoft, most senior backend/system-design-adjacent rounds
 
